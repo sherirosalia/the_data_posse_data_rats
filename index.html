@@ -10,29 +10,50 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-      html, body { 
-        /* height: 100%; */
-        }
+      footer > img {
+        margin: 2px;
+      }
+      html, body {height: 100%;}
 
-        #mouse1 {
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;
+  background-color: #E9ECEF;
+  } 
+
+
+        .animate {
         /* height: 50px; */
         /* margin-top: 35px;
         margin-bottom: 65px; */
-        animation-name:  goLeft;
+        animation-timing-function: ease-in;
+        animation-name:  mymove;
         animation-duration: 3s;
         animation-iteration-count: 1;
       }
       img{
         height: 6em;
-        
+        display: block;
+        float: left;
         margin-left: 3em;
       }
-      .preload * {
+
+@keyframes mymove {
+  from {right: 400px;}
+  to {left: 0px;}
+}
+      /* .preload * {
           -webkit-transition: none !important;
           -moz-transition: none !important;
           -ms-transition: none !important;
           -o-transition: none !important;
-}
+} */
 @-webkit-keyframes goLeft  {
     {
       right: -500%;
@@ -64,6 +85,19 @@
   margin-bottom: 1rem;
 }
 
+#foot_mouse {
+  height: 4em;
+  width: auto;
+  margin-right: 0;
+}
+
+#foots {
+  margin-top: 5em;
+  text-align: center;
+  
+  
+}
+
     </style>
   </head>
   <script>
@@ -78,9 +112,7 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-1">Rats in the Restaurant?</h1>
-      <p class="lead">Jumbo helper text</p>
-
-        <div class="preload" id="mouse1"></div>
+      <p class="lead">Jumbo helper text</p>     
 
       <hr class="my-2">
       <p>More info</p>
@@ -90,6 +122,11 @@
         Magni corporis minus distinctio dignissimos aperiam odio itaque, adipisci libero. Ut.
       </p>
     </div>
+    <div class="container">
+    <div class="row">
+      <div class="preload" id="mouse1"></div>
+    </div>
+  </div>
   </div>
 
   <div class="container description">
@@ -110,8 +147,12 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
 
-     <div class='tableauPlaceholder' id='viz1592574030519' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard&#47;RestaurantsinLAwithviolations&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;Rats_interactivedashboard&#47;RestaurantsinLAwithviolations?:language=en&amp;:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard&#47;RestaurantsinLAwithviolations&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1592574030519');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-      </div>
+<!-- <div class='tableauPlaceholder' id='viz1592627190426' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard_2&#47;RestaurantsinLAwithviolations&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Rats_interactivedashboard_2&#47;RestaurantsinLAwithviolations' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard_2&#47;RestaurantsinLAwithviolations&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1592627190426');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='1366px';vizElement.style.width='100%';vizElement.style.minHeight='795px';vizElement.style.maxHeight='895px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='1366px';vizElement.style.width='100%';vizElement.style.minHeight='795px';vizElement.style.maxHeight='895px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1077px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+      <div class='tableauPlaceholder' id='viz1592627130383' style='position: relative'><noscript><a href=''><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard_2&#47;RestaurantsinLAwithviolations&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Rats_interactivedashboard_2&#47;RestaurantsinLAwithviolations' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard_2&#47;RestaurantsinLAwithviolations&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1592627130383');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='1366px';vizElement.style.width='100%';vizElement.style.minHeight='795px';vizElement.style.maxHeight='895px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='1366px';vizElement.style.width='100%';vizElement.style.minHeight='795px';vizElement.style.maxHeight='895px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1077px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+      
+
+     <!-- <div class='tableauPlaceholder' id='viz1592574030519' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard&#47;RestaurantsinLAwithviolations&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;Rats_interactivedashboard&#47;RestaurantsinLAwithviolations?:language=en&amp;:embed=y&amp;:display_count=y&amp;publish=yes' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;Rats_interactivedashboard&#47;RestaurantsinLAwithviolations&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1592574030519');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div> -->
   </div>
 </div>
 
@@ -129,7 +170,9 @@
   </div>
 </div>
 
-  <div class="container">
+  <div class="container container-fluid">
+    
+  </div>
     <div class="row">
       
       <div class="col-xs-12 col-sm-12 col-md-12">
@@ -142,26 +185,24 @@
     </div>
   </div>
 
-<footer class="footer">
+<!-- Footer -->
+<!-- <footer class="footer" id="foots">
+  
   <div class="container">
     <span class="text-muted">© 2020 Copyright:
-     
-      <a href=""><img src ="images/m_legs.svg" height="20px" width="20px" alt="rats">Ladies Night</a></span>
+       <a href="https://github.com/mcarter-00/Rats-in-the-Restaurants">Ladies Night</a></span><img src ="images/m_legs.svg" id="foot_mouse" alt="rats">
   </div>
-</footer>
-
-
-
- 
+</footer> -->
+<div id="wrap">
+	<div id="main">
+	</div>
+</div>
+<div id="footer">
+</div>
 <!-- end of page container -->
 </div>
   
-
-
-
-
-
-      
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type='text/javascript' src='http://mysite.myserver.com/javascripts/api/viz_v1.js'></script>
@@ -169,17 +210,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
-      var playersBox = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
-      let playerContainer = document.getElementById('mouse1');
-      for (var i = 0; i < playersBox.length; i++) {
-          playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\"  >';
-          // playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\">';
-      }
 
-      $("#mouse").delay(1000).animate({"opacity": "1"}, 700);
-          $(document ).ready(function() {
-        $("body").removeClass("preload");
-      });
+
+      var mouseyImages = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
+      let mouseyDiv = document.getElementById('mouse1');
+      var arrayLength = mouseyImages.length;
+      for (let i=1; i<arrayLength; i++) {
+        
+          setTimeout( function timer(){
+            mouseyDiv.innerHTML += '<img src=\"'+mouseyImages[i]+'\"  >';
+          }, i*1500 );
+
+
+
+
+}
+// $(window).on("load", function(){
+//     // '#yourElement' this is the id of the html element you want to animate.
+//     // you can also use any other selector as well.
+//     $('#mouse1').addClass('animate_mice');
+// });
+
+      // var playersBox = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
+      // let playerContainer = document.getElementById('mouse1');
+      // for (var i = 0; i < playersBox.length; i++) {
+      //     playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\"  >';
+      //     // playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\">';
+      // }
+
+      // $("#mouse").delay(1000).animate({"opacity": "1"}, 700);
+      //     $(document ).ready(function() {
+      //   $("body").removeClass("preload");
+      // });
 </script>
 
   </body>
