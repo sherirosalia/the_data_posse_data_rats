@@ -8,20 +8,113 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
 
+    <style>
+      footer > img {
+        margin: 2px;
+      }
+      html, body {height: 100%;}
+
+      #wrap {min-height: 100%;}
+
+      #main {overflow:auto;
+        padding-bottom: 180px;}  /* must be same height as the footer */
+
+      #footer {position: relative;
+        margin-top: -180px; /* negative value of footer height */
+        height: 180px;
+        clear:both;
+        background-color: #E9ECEF;
+        } 
+
+
+        .animate {
+        /* height: 50px; */
+        /* margin-top: 35px;
+        margin-bottom: 65px; */
+        /* animation-timing-function: ease-in;
+        animation-name:  mymove;
+        animation-duration: 3s;
+        animation-iteration-count: 1; */
+      }
+      img{
+        height: 6em;
+        display: block;
+        float: left;
+        margin-left: 3em;
+      }
+
+/* @keyframes mymove {
+  from {right: -400px;}
+  to {left: 0px;} */
+}
+      /* .preload * {
+          -webkit-transition: none !important;
+          -moz-transition: none !important;
+          -ms-transition: none !important;
+          -o-transition: none !important;
+} */
+@-webkit-keyframes goLeft  {
+    {
+      right: -500%;
+      transform: translateX(0);
+    }
+    100% {
+      left: 0%%;
+      transform: translateX(300%);
+    }
+}
+
+      /* @keyframes goLeft {
+      from {
+        /* -webkit-transform: translate(0,0); */
+        /* margin-right: 100%;
+        width: 300%;
+      } */
+
+      /* to { */
+        /* -webkit-transform: translate(980px,0); */
+        /* margin-left: 0%;
+        width: 25%;
+      /* } 
+}   */
+
+.description {
+  padding: 1em;
+  margin-top: 3em;
+  margin-bottom: 1rem;
+}
+
+#foot_mouse {
+  height: 4em;
+  width: auto;
+  margin-right: 0;
+}
+
+#foots {
+  margin-top: 5em;
+  text-align: center;
+  
+  
+}
+  </style>
 </head>
-
+  <script>
+      //     $("#mouse").delay(1000).animate({"opacity": "1"}, 700);
+      //     $(document ).ready(function() {
+      //   $("body").removeClass("preload");
+      // });
+  </script>
 <body>
+<div class="wrapper">
 
-  <div class="wrapper">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-1">Rats in the Restaurant?</h1>
       <div class="row">
         <div class="preload" id="mouse1"></div>
       </div>
-      <!-- <p class="lead">Jumbo helper text</p>     
+      <p class="lead">Jumbo helper text</p>     
 
       <hr class="my-2">
       <p>More info</p>
@@ -29,12 +122,15 @@
        Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Odio placeat at saepe ipsum reprehenderit libero nam molestias, hic eligendi! 
         Magni corporis minus distinctio dignissimos aperiam odio itaque, adipisci libero. Ut.
-      </p> -->
+      </p>
     </div>
-
+    <div class="container">
+    <div class="row">
+      <div class="preload" id="mouse1"></div>
+    </div>
+  </div>
   </div>
 
-<section class="content">
   <div class="container description">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12">
@@ -90,36 +186,41 @@
       
     </div>
   </div>
-
-  <div class="container description">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-        <h2>
-          Restaurant violations in Los Angeles, California
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Nemo facilis non pariatur explicabo totam qui dolore unde nobis enim a.
-        </p>
-      </div>
+<div class="container description">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <h2>
+        Restaurant violations in Los Angeles, California
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Nemo facilis non pariatur explicabo totam qui dolore unde nobis enim a.
+      </p>
     </div>
   </div>
+</div>
+<!-- Footer -->
+<!-- <footer class="footer" id="foots">
+  
+  <div class="container">
+    <span class="text-muted">© 2020 Copyright:
+       <a href="https://github.com/mcarter-00/Rats-in-the-Restaurants">Ladies Night</a></span><img src ="images/m_legs.svg" id="foot_mouse" alt="rats">
+  </div>
+</footer> -->
   <div id="wrap">
     <div id="main">
-
+<p>Hello</p>
       
     </div>
   </div>
 </div>
-</section>
+
 
   <div id="footer">
     <span class="text-muted">© 2020 Copyright:
       <a href="https://github.com/mcarter-00/Rats-in-the-Restaurants">Ladies Night</a></span><img src ="images/m_legs.svg" id="foot_mouse" alt="rats">
     </span>
   </div>
-
-
 <!-- end of page container -->
 </div>
   
@@ -130,10 +231,40 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/tableau-extensions-1.latest.min.js"></script>
-    <script src="app.js"></script>
+    <script>
 
-  
+
+      var mouseyImages = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
+      let mouseyDiv = document.getElementById('mouse1');
+      var arrayLength = mouseyImages.length;
+      for (let i=1; i<arrayLength; i++) {
+        
+          setTimeout( function timer(){
+            mouseyDiv.innerHTML += '<img src=\"'+mouseyImages[i]+'\"  >';
+          }, i*1500 );
+
+
+
+
+}
+// $(window).on("load", function(){
+//     // '#yourElement' this is the id of the html element you want to animate.
+//     // you can also use any other selector as well.
+//     $('#mouse1').addClass('animate_mice');
+// });
+
+      // var playersBox = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
+      // let playerContainer = document.getElementById('mouse1');
+      // for (var i = 0; i < playersBox.length; i++) {
+      //     playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\"  >';
+      //     // playerContainer.innerHTML += '<img src=\"'+playersBox[i]+'\">';
+      // }
+
+      // $("#mouse").delay(1000).animate({"opacity": "1"}, 700);
+      //     $(document ).ready(function() {
+      //   $("body").removeClass("preload");
+      // });
+</script>
 
   </body>
 </html>
