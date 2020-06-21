@@ -13,22 +13,41 @@ body {
     top: 0;
     padding: 2em;
 }
+
 .content {
     position: relative;
-    
     z-index: -1;
     background-color: #ffffff;
     width: 100%;
-    
-    padding: 3em;
+    padding: 2em;
   }
   
-
+  #bottom_cards{
+      width: 100%
+  }
+.card{
+    padding-bottom: 1em;
+    padding-right: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+    #top_content {
+        margin-top: 10em;
+    }
+} 
 
 
 footer > img {
     margin: 2px;
   }
+#ft_text {
+    margin-left: 1em;
+    margin-top: 2em;
+
+}
+
   html, body {height: 100%;}
 
   #wrap {min-height: 100%;}
@@ -41,11 +60,12 @@ footer > img {
     height: 180px;
     clear:both;
     background-color: #E9ECEF;
+    padding-top: 3em;
     } 
 
 
   img{
-    height: 6em;
+    height: 3em;
     display: block;
     float: left;
     margin-left: 3em;
@@ -56,7 +76,10 @@ padding: 1em;
 margin-top: 3em;
 margin-bottom: 1rem;
 }
-
+#pic {
+    height: 70px;
+    width: auto;
+}
 #foot_mouse {
 height: 4em;
 width: auto;
@@ -66,6 +89,4 @@ margin-right: 0;
 #foots {
 margin-top: 5em;
 text-align: center;
-
-
 }
