@@ -5,6 +5,8 @@ body {
   * {
     box-sizing:border-box;
   }
+
+
   
 .jumbotron {
     position: fixed;
@@ -23,13 +25,17 @@ body {
   }
   
   #bottom_cards{
-      width: 100%
+      width: 100%;
+      margin: auto;
+      width: 90%;
+
+      
   }
 .card{
     padding-bottom: 1em;
-    padding-right: 2em;
-    margin-right: 2em;
-    margin-left: 2em;
+    padding-right: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
@@ -65,7 +71,7 @@ footer > img {
 
 
   img{
-    height: 3em;
+    height: 6em;
     display: block;
     float: left;
     margin-left: 3em;

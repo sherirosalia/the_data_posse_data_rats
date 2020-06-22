@@ -1,9 +1,16 @@
 
-$(document).ready(function(){
-	$('.content').css({
-  	'margin-top':$('.jumbotron').outerHeight()
-  });
-});
+// $(document).ready(function(){
+// 	$('.content').css({
+//   	'margin-top':$('.jumbotron').outerHeight()
+//   });
+// });
+
+// $('#nav').affix({
+//   offset: {
+//     top: $('header').height()
+//   }
+// });	
+
 
 var mouseyImages = ['images/m_da.svg', 'images/m_legs.svg', 'images/m_sleep.png', 'images/m_up.svg', 'images/m_sv.svg', 'images/m_ls.svg' ];
 let mouseyDiv = document.getElementById('mouse1');

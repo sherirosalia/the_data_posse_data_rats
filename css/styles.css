@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+  }
+#figuras {
+  content: url(../images/figuras.png);
+  padding: 2em;
+  width: '80%';
+  height: auto;
+
+}
+  /* * {
+    box-sizing:border-box;
+  } */
+
+  /* bootstrap 3 helpers */
+
+/* .navbar-form input, .form-inline input {
+	width:auto;
+} */
+
+.navbar {
+  min-height: 8em;
+}
+
+/* header {
+	height:280px;
+  background-color:#eee; 
+} */
+
+.jumbotron {
+    /* position: fixed; */
+    /* background-color: coral; */
+    /* z-index: 2; */
+    /* width: 100%; */
+    top: 0;
+    padding: 2em;
+    margin-bottom: 0em;
+}
+
+
+/* .jumbotron {
+    position: fixed;
+    background-color: coral;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    padding: 2em;
+} */
+  /* Small Mobile devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    #j_h1{
+      font-size: large;
+      color: darkslateblue;
+     
+  }
+.card{
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+}
+  } 
+
+
+.content {
+    position: relative;
+    z-index: -1;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 3em;
+  }
+  
+  /* #bottom_cards{
+      width: 100%;
+      margin: auto;
+      width: 90%;
+
+      
+  }
+.card{
+    padding-bottom: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+} */
+
+
+  /* Mobile devices (phones, 800px and down) */
+  @media only screen and (max-width: 800px) {
+    #bottom_cards{
+      width: 100%;
+      margin: auto;
+      width: 100%;
+
+      
+  }
+.card{
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+  } 
+  
+    /* Small Mobile devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      #bottom_cards{
+        width: 100%;
+        margin: 0;
+        width: 100%;
+  
+        
+    }
+  .card{
+      padding-bottom: 0.em;
+      padding-right: 0.em;
+      margin-right: 0.em;
+      margin-left: 0.em;
+  }
+    } 
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+    #top_content {
+        margin-top: 5em;
+    }
+}  */
+
+
+footer > img {
+    margin: 2px;
+  }
+#ft_text {
+  font-size: 125%;
+
+}
+
+  html, body {height: 100%;}
+
+  #wrap {min-height: 100%;}
+
+  #main {overflow:auto;
+    padding-bottom: 180px;}  /* must be same height as the footer */
+
+  #footer {position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear:both;
+    /* background-color: coral; */
+    background-color: #E9ECEF;
+    padding-top: 3em;
+    } 
+
+
+  div.mouser img{
+    height: 6em;
+    display: block;
+    float: left;
+    margin-left: 3em;
+  }
+
+  /* Mobile devices (phones, 800px and down) */
+@media only screen and (max-width: 800px) {
+  div.mouser img {
+    height: 3em;
+    display: block;
+    float: left;
+    margin-left: 1em;
+  }
+} 
+  /* Small Mobile devices (phones, 800px and down) */
+  @media only screen and (max-width: 600px) {
+    div.mouser img {
+      height: 1.5em;
+      display: block;
+      float: left;
+      margin-left: 1em;
+    }
+  } 
+.description {
+padding: 2em;
+margin-top: 4em;
+margin-bottom: 1rem;
+}
+
+  /* Small Mobile devices (phones, 600px and down) */
+  @media only screen and (max-width: 800px) {
+    .description {
+      padding: 0em;
+      margin-top: .5em;
+      margin-bottom: .5em;
+      }
+    h2 {
+      font-size: medium;
+      color: darkslateblue;
+    }
+  } 
+
+
+#pic {
+    height: 70px;
+    width: auto;
+}
+#foot_mouse {
+height: 3em;
+width: auto;
+margin-right: 10px;
+}
+    /* Mobile devices (phones, 800px and down) */
+    @media only screen and (max-width: 800px) {
+      .description {
+        padding: .25em;
+        margin-top: .25em;
+        margin-bottom: .5em;
+        }
+        #pic {
+          height: 50px;
+          width: auto;
+      }
+      #foot_mouse {
+      height: 3em;
+      width: auto;
+      margin-right: 20px;      
+      }
+    } 
+
+/* #foots {
+margin-top: 5em;
+text-align: center;
+} */
