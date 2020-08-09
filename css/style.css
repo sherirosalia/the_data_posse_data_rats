@@ -1,13 +1,14 @@
 
-body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; line-height: 30px; text-align: center; }
+/* body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; color: #888; line-height: 30px; text-align: center; } */
 
-strong { font-weight: 600; }
+ /* strong { font-weight: 600; } */
 
-a { color: #a365bc; border-bottom: 1px dashed #a365bc; text-decoration: none; transition: all .3s; }
-a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; }
+/* a { color: #a365bc; border-bottom: 1px dashed #a365bc; text-decoration: none; transition: all .3s; }
+a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; } */
 
-h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; }
-h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; }
+/* h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; } */
+
+/* h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; } */
 
 img { max-width: 100%; }
 
@@ -19,7 +20,7 @@ img { max-width: 100%; }
 
 /***** General style, all sections *****/
 
-.section-container { margin: 0 auto; padding-bottom: 20px; }
+/* .section-container { margin: 0 auto; padding-bottom: 20px; }
 
 .section-container-gray-bg { background: #f8f8f8; }
 
@@ -34,7 +35,7 @@ img { max-width: 100%; }
 .section-description p { margin-top: 20px; padding: 0 120px; }
 .section-container-image-bg .section-description p { opacity: 0.8; }
 
-.section-bottom-button { padding-top: 60px; }
+.section-bottom-button { padding-top: 60px; } */
 
 
 /***** Divider *****/
@@ -55,12 +56,12 @@ img { max-width: 100%; }
 
 .navbar-expand-md .navbar-nav .nav-link { padding-right: 1rem; padding-left: 1rem; }
 
-.navbar-brand {
+/* .navbar-brand {
 	width: 123px;
 	background: url(../img/logo.png) left center no-repeat;
 	border: 0;
 	text-indent: -99999px;
-}
+} */
 
 
 /***** Top content *****/
