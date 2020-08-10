@@ -33,14 +33,14 @@ information and health code violations from the Open Data program for the city o
 - Coming Soon
 
 
-## 
-Bad Habits
+## Visualizations
+### Bad Habits
 ![Bad Habits](images/bad_habits.png)
 
-LA Restaruants
+### LA Restaruants
 ![Los Angeles Restaurants](images/la_map.png)
 
-Tacos
+### Tacos
 ![Mexican Restaurants](images/mex.png)
 
 
