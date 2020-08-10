@@ -37,7 +37,7 @@ information and health code violations from the Open Data program for the city o
 ### Bad Habits
 ![Bad Habits](images/bad_habits.png)
 
-### LA Restaruants
+### LA Restaurants
 ![Los Angeles Restaurants](images/la_map.png)
 
 ### Tacos
