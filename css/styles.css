@@ -8,6 +8,14 @@ body {
   height: auto;
 
 }
+.spacer {
+  margin-top: 1em;
+}
+
+#data-ratz {
+  margin-left: 3em;
+  padding: 2em;
+}
   /* * {
     box-sizing:border-box;
   } */
