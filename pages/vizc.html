@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="../css/styles.css"> -->
     
-    <title>Bad Actors</title>
+    <title>Reviews and Ratings</title>
   </head>
   <body>
 
@@ -30,7 +30,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="viza.html">LA Map</a>
                         <a class="dropdown-item" href="vizb.html">Bad Habits</a>
-                        <a class="dropdown-item" href="vizc.html">Bad Actors</a>
+                        <a class="dropdown-item" href="vizc.html">Reviews and Ratings</a>
                         <a class="dropdown-item" href="vizd.html">Tacos</a>
                     </div>
                 </li>
@@ -84,7 +84,7 @@
     <script src="https://public.tableau.com/javascripts/api/tableau-2.5.0.min.js"></script>
     <script>    function mapIt(){
         let containerDiv=document.getElementById("worst"),
-        url="https://public.tableau.com/views/PUBLISHED_EXPLORE_RATS/Violations_Per_Restaurant?:language=en&:display_count=y&:origin=viz_share_link";
+        url="https://public.tableau.com/views/YelpLa_RatingvsNumberofreviews/Ratingvsnumberofreviews?:language=en&:display_count=y&:origin=viz_share_link";
     
         let viz = new tableau.Viz(containerDiv, url);
         
