@@ -44,7 +44,7 @@
             </div>
         </nav>
 
-   <div class="container"> 
+   <div class="container=fluid"> 
        <h2>Mapping Los Angeles</h2></div>
 
         <div class="container" id='map'>
@@ -83,7 +83,7 @@
     <script src="https://public.tableau.com/javascripts/api/tableau-2.5.0.min.js"></script>
     <script>    function mapIt(){
         let containerDiv=document.getElementById("map"),
-        url="https://public.tableau.com/views/Ratsandyelp_interactivedashboard/RestaurantsinLAwithviolations?:language=en&:display_count=y&:origin=viz_share_link";
+        url="https://public.tableau.com/views/Ratsandyelp_interactivedashboard/RestaurantsinLAwithviolations?:language=en&:retry=yes&:embed=y&:display_count=y&:origin=viz_share_link";
     
         let viz = new tableau.Viz(containerDiv, url);
         
