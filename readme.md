@@ -2,7 +2,7 @@
 Where are the rats? This project is an analysis of health code violations at Los Angeles, CA restaurants with a special emphasis on rodents otherwise known as code F023.
 
 ## About 
-Friends who code together staty together? This project is a result of combined  restaurant data from publically available sources such as Yelp API, the county and city of Los Angeles, CA.
+Friends who code together stay together! This project is a result of combined  restaurant data from publically available sources such as Yelp API, the county and city of Los Angeles, CA.
 
 ## Data 
 - Yelp API data includes rating, review counts, pricing and location information.
