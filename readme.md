@@ -1,13 +1,12 @@
 # Data Rats
-Analysis of eateries in Los Angeles, California.
+Where are the rats? This project is an analysis of health code violations at Los Angeles, CA restaurants with a special emphasis on rodents otherwise known as code F023.
 
 ## About 
-Combined restaurant data from publically available sources such as Yelp API, Los Angeles, CA county demographic 
-information and health code violations from the Open Data program for the city of LA.
+Friends who code together staty together? This project is a result of combined  restaurant data from publically available sources such as Yelp API, the county and city of Los Angeles, CA.
 
 ## Data 
 - Yelp API data includes rating, review counts, pricing and location information.
-- Los Angeles, California public data accesses health code and demographic
+- Los Angeles, California Open Data.gov provides public data accesses to health code violations and demographic statistics.
 
 ## File Structure
 - JSON and CSV file are in 'csv' directory. File paths may need to be adjusted according to environment.
@@ -22,15 +21,8 @@ information and health code violations from the Open Data program for the city o
 - Tableau
 - JavaScript
 
-## Deployment
-- Webpage is deployed on GitHub pages.
-
-
-## Files
-- Coming Soon
-
-## Findings
-- Coming Soon
+## Website
+-  <a href="https://sherirosalia.github.io/the_data_posse_data_rats/"> Data Rats </a> contains interactive dashboards and analysis
 
 
 ## Visualizations
