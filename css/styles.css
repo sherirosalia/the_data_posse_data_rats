@@ -11,6 +11,9 @@ body {
 .spacer {
   margin-top: 1em;
 }
+.space{
+  margin-top: 4rem;
+}
 
 #data-ratz {
   margin-left: 3em;
